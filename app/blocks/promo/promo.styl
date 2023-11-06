@@ -87,6 +87,7 @@
         position absolute
         top w(500)
         left w(0)
+        width 100vw
         img
             width 100%
 
@@ -135,14 +136,180 @@
         flex-direction row
         justify-content flex-end
 
-    &__wrap__list
-        width 100%
-        height 500px
-        overflow hidden
-
     &__list__card-title
+        margin-top w(40)
+        color $c-blue
+        font-family $ff-Gogol
+        font-size w(40)
+        font-weight 400
+        line-height w(45)
+        text-align center
+
+    &__list__card-subtitle
+        color $c-blue
+        font-family $ff-Gogol
+        font-size w(40)
+        font-weight 400
+        line-height w(40)
+        text-align center
+
+    &__slider__counter
+        position relative
+        margin-top w(150)
+        display flex
+        flex-direction row
+        justify-content center
+        align-items center
+        z-index 2
+
+    &__slider__counter-number
+        margin-right w(15)
         color $c-blue
         font-family $ff-Gogol
         font-size w(55)
         font-weight 400
-        line-height w(60)
+        line-height w(50)
+
+    &__slider__counter-line
+        width w(15)
+        height w(25)
+        img
+            width 100%
+    
+    &__slider__counter-choice
+        margin-left w(15)
+        color $c-blue
+        font-family $ff-Montserrat
+        font-size w(22)
+        font-weight 500
+        line-height w(22)
+
+    &__slider
+        overflow hidden
+        width 78vw
+        margin-left w(100)
+        padding-top w(10)
+        position relative
+        display flex
+        flex-direction row
+        justify-content center
+        align-items center
+
+    &__wrap__button
+        position absolute
+        z-index 1
+        top 50%
+        left 25%
+        max-width w(550)
+        width 100%
+        display flex
+        flex-direction row
+        justify-content space-between
+
+    &__wrap__button-prev
+        width w(40)
+        height w(70)
+        img
+            width 100%
+
+    &__wrap__button-next
+        width w(40)
+        height w(70)
+        img
+            width 100%
+
+    &__list__card-img
+        margin auto
+        width w(250)
+        height w(215)
+        img
+            width 100%
+        
+    &__list__card
+        margin-top 20%
+        position relative
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+        width w(400)
+        height w(515)
+
+    &__list__card-vector
+        position absolute
+        top w(-1)
+        left w(75)
+        width w(25)
+        height w(75)
+        display none
+        img
+            width 100%
+
+    &__list__card-link
+        margin-top w(20)
+        display flex
+        flex-direction row
+        justify-content center
+        align-items center
+        text-decoration none
+
+    &__list__card-link-text
+        color $c-white
+        text-align center
+        font-family $ff-Montserrat
+        font-size w(18)
+        font-weight 500
+        line-height w(50)
+        margin-right w(30)
+        text-decoration none
+
+    &__list__card-link-arrow
+        width w(35)
+        height w(30)
+        img
+            width 100%
+
+.promo__wrap__list .slick-slide.slick-active .promo__list__card-title {
+    color: #fff;
+    text-align: left;
+    padding-top 75%
+    padding-left 10%
+    margin-top w(0)
+}
+
+.promo__wrap__list .slick-slide.slick-active .promo__list__card-subtitle {
+    color #fff
+    text-align right
+    padding-right 10%
+    line-height w(75)
+}
+
+.promo__wrap__list .slick-slide.slick-active{
+    margin 0 w(120) 0
+    background url(/images/slide-active-bg.png)
+    background-size cover
+    width w(400)
+    height w(515)
+    border-radius w(40)
+    transition 1.5s
+}
+
+.promo__wrap__list .slick-slide.slick-active .promo__list__card{
+    margin-top 0
+} 
+
+.promo__wrap__list .slick-slide.slick-active .promo__list__card-img{
+    width w(350) 
+    height w(315)
+    position absolute
+    top w(-10)
+    padding-left w(50)
+}
+
+.promo__wrap__list .slick-slide.slick-active .promo__list__card-vector {
+    display block
+}
+
+.disabled{
+    display: none;    
+}

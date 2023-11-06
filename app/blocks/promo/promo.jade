@@ -24,15 +24,108 @@ mixin promo()
             img(src='/images/picture-main.png')
         +e.image-fruct
             img(src='/images/picture-fruct.png')
-        +e('div').slider
-            +e('div').slide
-                img(src='/images/vk.svg')
-            +e('div').slide
-                img(src='/images/vk.svg')
-            +e('div').slide
-                img(src='/images/vk.svg')
-            +e('div').slide
-                img(src='/images/vk.svg')
+        +e.bg-slider
+            img(src='/images/promo-bg-sliders.png')
+        +e.slider__counter
+            +e.slider__counter-number 1/7
+            +e.slider__counter-line
+                img(src='/images/choice-line.png')
+            +e.slider__counter-choice Выберите героиню
+        +e.slider
+            +e.wrap__list
+                +e.list__card(id='1')
+                    +e.list__card-img
+                        img(src='/images/promo__slider-1.png' alt="" class='card-img')
+                    +e.list__card-title Юлия
+                    +e.list__card-subtitle Колесникова
+                    +e.list__card-vector
+                        img(src='/images/slide-active-vector.png')
+                    +e('a').list__card-link(href='#')
+                        +e.list__card-link-text Смотреть дневник
+                        +e.list__card-link-arrow
+                            img(src='/images/slider-active-arrow.png')
+                +e.list__card(id='2')
+                    +e.list__card-img
+                        img(src='/images/promo__slider-2.png' alt="" class='card-img')
+                    +e.list__card-title Анастасия
+                    +e.list__card-subtitle Колесникова
+                    +e.list__card-vector
+                        img(src='/images/slide-active-vector.png')
+                    +e('a').list__card-link(href='#')
+                        +e.list__card-link-text Смотреть дневник
+                        +e.list__card-link-arrow
+                            img(src='/images/slider-active-arrow.png')
+                +e.list__card(id='3')
+                    +e.list__card-img
+                        img(src='/images/promo__slider-3.png' alt="" class='card-img')
+                    +e.list__card-title Полина
+                    +e.list__card-subtitle Гончаренко
+                    +e.list__card-vector
+                        img(src='/images/slide-active-vector.png')
+                    +e('a').list__card-link(href='#')
+                        +e.list__card-link-text Смотреть дневник
+                        +e.list__card-link-arrow
+                            img(src='/images/slider-active-arrow.png')
+                +e.list__card(id='4')
+                    +e.list__card-img
+                        img(src='/images/promo__slider-1.png' alt="" class='card-img')
+                    +e.list__card-title Юлия
+                    +e.list__card-subtitle Колесникова
+                    +e.list__card-vector
+                        img(src='/images/slide-active-vector.png')
+                    +e('a').list__card-link(href='#')
+                        +e.list__card-link-text Смотреть дневник
+                        +e.list__card-link-arrow
+                            img(src='/images/slider-active-arrow.png')
+                +e.list__card(id='4')
+                    +e.list__card-img
+                        img(src='/images/promo__slider-1.png' alt="" class='card-img')
+                    +e.list__card-title Юлия
+                    +e.list__card-subtitle Колесникова
+                    +e.list__card-vector
+                        img(src='/images/slide-active-vector.png')
+                    +e('a').list__card-link(href='#')
+                        +e.list__card-link-text Смотреть дневник
+                        +e.list__card-link-arrow
+                            img(src='/images/slider-active-arrow.png')
+                +e.list__card(id='5')
+                    +e.list__card-img
+                        img(src='/images/promo__slider-1.png' alt="" class='card-img')
+                    +e.list__card-title Юлия
+                    +e.list__card-subtitle Колесникова
+                    +e.list__card-vector
+                        img(src='/images/slide-active-vector.png')
+                    +e('a').list__card-link(href='#')
+                        +e.list__card-link-text Смотреть дневник
+                        +e.list__card-link-arrow
+                            img(src='/images/slider-active-arrow.png')
+                +e.list__card(id='6')
+                    +e.list__card-img
+                        img(src='/images/promo__slider-1.png' alt="" class='card-img')
+                    +e.list__card-title Юлия
+                    +e.list__card-subtitle Колесникова
+                    +e.list__card-vector
+                        img(src='/images/slide-active-vector.png')
+                    +e('a').list__card-link(href='#')
+                        +e.list__card-link-text Смотреть дневник
+                        +e.list__card-link-arrow
+                            img(src='/images/slider-active-arrow.png')
+                +e.list__card(id='7')
+                    +e.list__card-img
+                        img(src='/images/promo__slider-1.png' alt="" class='card-img')
+                    +e.list__card-title Юлия
+                    +e.list__card-subtitle Колесникова
+                    +e.list__card-vector
+                        img(src='/images/slide-active-vector.png')
+                    +e('a').list__card-link(href='#')
+                        +e.list__card-link-text Смотреть дневник
+                        +e.list__card-link-arrow
+                            img(src='/images/slider-active-arrow.png')
+            +e.wrap__button
+                +e.wrap__button-prev
+                    img(src='/images/arrow-slider-prev.png')
+                +e.wrap__button-next
+                    img(src='/images/arrow-slider-next.png')
         +e.wrap__footer
             +e.wrap__footer-sharing
                 +e('a').wrap__footer-link(href='#')
