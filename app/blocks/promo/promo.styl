@@ -1,0 +1,148 @@
+.promo
+    padding w(40) w(100)
+    height 100%
+    background url(/images/bg.png) lightgray 0% 0% / 100px 100px repeat
+
+    &__image-fruct
+        position absolute
+        top w(25)
+        left w(0)
+
+    &__wrap__header
+        display flex
+        flex-direction row
+        justify-content flex-end
+
+    &__wrap__header-image
+        width w(140)
+        height w(35)
+        img
+            width 100%
+
+    &__wrap__header-line
+        margin 0 w(15) 0
+        width w(20)
+        height w(15)
+        img
+            width 100%
+
+    &__wrap
+        margin-top w(50)
+        margin-left w(100)
+
+    &__wrap-subtitle
+        color $c-blue
+        font-family $ff-Montserrat
+        font-size w(22)
+        font-weight 500
+        line-height w(22)
+        letter-spacing w(0.22)
+
+    &__wrap__content
+        margin-top w(15)
+        display flex
+        flex-direction row
+        justify-content flex-start
+
+    &__wrap__content-number
+        width w(115)
+        height w(150)
+        flex-shrink 0
+        margin-right w(40)
+
+    &__wrap__content-title
+        position relative
+        color $c-blue
+        font-family $ff-Gogol
+        font-size w(55)
+        font-weight 400
+        line-height w(60)
+
+    &__wrap__text
+        margin-top w(55)
+        max-width w(480)
+        color $c-black
+        font-family $ff-Montserrat
+        font-size w(17)
+        font-weight 400
+        line-height w(22)
+        letter-spacing w(0.34)
+
+    &__image-main
+        position absolute
+        max-width w(650)
+        top w(200)
+        right w(0)
+        z-index 1
+        img
+            width 100%
+
+    &__underline
+        position absolute
+        max-width w(645)
+        left w(-40)
+        bottom w(10)
+
+    &__bg-slider
+        position absolute
+        top w(500)
+        left w(0)
+        img
+            width 100%
+
+    &__wrap__footer
+        position relative
+        z-index 1
+        margin-top w(150)
+        display flex
+        flex-direction row
+        justify-content space-between
+        align-items center
+
+    &__wrap__footer-sharing
+        display flex
+        flex-direction row
+        justify-content flex-start
+        align-items center
+
+    &__wrap__footer-link
+        position relative
+        width w(55)
+        height w(55)
+        background-color $c-orange
+        border-radius 50%
+        margin-right w(25)
+        &:last-child
+            margin-right 0
+        img
+            width w(40)
+            height w(40)
+            position absolute
+            top 50%
+            transform translate(15%, -50%)
+
+    &__wrap__footer-text
+        color $c-black
+        text-align center
+        font-family $ff-Montserrat
+        font-size w(14)
+        font-weight 500
+        line-height w(20)
+        letter-spacing w(0.7)
+
+    &__wrap__footer-logo
+        display flex
+        flex-direction row
+        justify-content flex-end
+
+    &__wrap__list
+        width 100%
+        height 500px
+        overflow hidden
+
+    &__list__card-title
+        color $c-blue
+        font-family $ff-Gogol
+        font-size w(55)
+        font-weight 400
+        line-height w(60)

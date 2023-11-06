@@ -1,0 +1,53 @@
+mixin promo()
+    +b('section').promo
+        +e.wrap__header
+            +e.wrap__header-image
+                img(src='/images/logo-mag.png')
+            +e.wrap__header-line
+                img(src='/images/line.png')
+            +e.wrap__header-image
+                img(src='/images/logo-woman.png')
+        +e.wrap 
+            +e('p').wrap-subtitle Дорогой дневник...
+            +e.wrap__content
+                +e.wrap__content-number
+                    img(src='/images/number.svg')
+                +e.wrap__content-text
+                    +e.wrap__content-title личных историй
+                        img( class= 'promo__underline' src='./images/underline.svg')
+                    +e.wrap__content-title обретения себя
+                        img( class= 'promo__underline' src='./images/underline.svg')
+                    +e.wrap__content-title и уверенности
+                        img( class= 'promo__underline' src='./images/underline.svg')
+            +e.wrap__text Можно зайти с того, что есть вещи, в которых мы редко признаемся другим. Но которые хочется «выложить из головы», и тогда на помощь приходит дневник. Многие вели такие в детстве. А сейчас такой дневничок – это повод разобраться в себе, ответить на вопрос: кто я и стать увереннее.
+        +e.image-main
+            img(src='/images/picture-main.png')
+        +e.image-fruct
+            img(src='/images/picture-fruct.png')
+        +e('div').slider
+            +e('div').slide
+                img(src='/images/vk.svg')
+            +e('div').slide
+                img(src='/images/vk.svg')
+            +e('div').slide
+                img(src='/images/vk.svg')
+            +e('div').slide
+                img(src='/images/vk.svg')
+        +e.wrap__footer
+            +e.wrap__footer-sharing
+                +e('a').wrap__footer-link(href='#')
+                    img(src='/images/vk.svg')
+                +e('a').wrap__footer-link(href='#')
+                    img(src='/images/od.svg')
+                +e('a').wrap__footer-link(href='#')
+                    img(src='/images/tg.svg')
+            +e.wrap__footer-text © 2023,  Shkulev Media Holding<br>Creative Studio
+            +e.wrap__footer-logo
+                +e.wrap__header-image
+                    img(src='/images/logo-mag.png')
+                +e.wrap__header-line
+                    img(src='/images/line.png')
+                +e.wrap__header-image
+                    img(src='/images/logo-woman.png')
+
+

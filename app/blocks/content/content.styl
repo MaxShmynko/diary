@@ -1,0 +1,392 @@
+.content
+    padding w(45) w(95) w(0)
+    padding-top w(45)
+    height 100%
+    background url(/images/bg.png) lightgray 0% 0% / 100px 100px repeat
+
+    &__wrap__header
+        display flex
+        flex-direction row
+        justify-content space-between
+
+    &__wrap__header-logo
+        display flex
+        flex-direction row
+        justify-content flex-end
+
+     &__wrap__header-image
+        width w(140)
+        height w(35)
+        img
+            width 100%
+
+    &__wrap__header-line
+        margin 0 w(15) 0
+        width w(20)
+        height w(15)
+        img
+            width 100%
+
+    &__wrap__header-link
+        display flex
+        flex-direction row
+        justify-content flex-start
+        align-items center
+        text-decoration none
+
+    &__wrap__header-link-text
+        margin-left w(15)
+        color $c-blue
+        text-align center
+        font-family $ff-Gogol
+        font-size w(26)
+        font-weight 400
+        line-height normal
+
+     &__wrap-subtitle
+        color $c-blue
+        font-family $ff-Montserrat
+        font-size w(22)
+        font-weight 500
+        line-height w(22)
+        letter-spacing w(0.22)
+
+    &__wrap__content
+        margin w(45)
+        display flex
+        flex-direction row
+        justify-content space-between
+        align-items center
+
+    &__wrap__content-text
+        margin-top w(20)
+        display flex
+        flex-direction column
+
+    &__wrap__content-title
+        position relative
+        color $c-blue
+        font-family $ff-Gogol
+        font-size w(55)
+        font-weight 400
+        line-height w(70)
+
+    &__wrap__content-subtitle
+        position relative
+        color $c-blue
+        font-family $ff-Gogol
+        font-size w(30)
+        font-weight 400
+        line-height w(50)
+
+    &__underline
+        position absolute
+        max-width w(455)
+        left w(0)
+        bottom w(10)
+
+    &__wrap__content-item
+        display flex
+        flex-direction row
+        justify-content flex-start
+        align-items center
+
+    &__wrap__content-item-image
+        width w(530)
+        height w(470)
+        flex-shrink 0
+        img
+            width 100%
+
+    &__wrap__info
+        padding w(150) w(105) w(115)
+        background-image url(/images/content-bg-info.png)
+        background-size cover
+        display flex
+        flex-direction column
+
+    &__wrap__col
+        margin-top w(35)
+        display flex
+        flex-direction row
+        justify-content flex-start
+
+    &__wrap__col-question
+        margin-top w(15)
+        width w(300)
+        display flex
+        flex-direction row
+        justify-content flex-start
+
+    &__wrap__col-answer
+        margin-left w(25)
+
+    &__wrap__question-text
+        color $c-orange
+        font-family $ff-Montserrat
+        font-size w(18)
+        font-weight 500
+        line-height normal
+        &:last-child
+            margin-left w(10)
+
+    &__wrap__answer-text
+        position relative
+        color $c-blue
+        font-family $ff-Gogol
+        font-size w(40)
+        font-weight 500
+        line-height w(50)
+
+    &__underline-info
+        position absolute
+        max-width w(705)
+        left w(-30)
+        bottom w(15)
+
+    &__wrap__history
+        position relative
+        margin-top w(165)
+        display flex
+        flex-direction row
+        justify-content space-between
+
+    &__wrap__history-paper 
+        position absolute
+        right w(-160)
+        bottom w(-400)
+        width w(550)
+        height w(550)
+        img
+            width 100%
+
+    &__wrap__history-prod
+        position absolute
+        width w(230)
+        height w(245)
+        bottom w(130)
+        left w(-85)
+        img
+            width 100%
+
+    &__wrap__history-photo
+        position absolute
+        width w(170)
+        height w(165)
+        bottom w(30)
+        left w(356)
+        img
+            width 100%
+
+    &__wrap__history-picture
+        position relative
+        padding w(20)
+        background $c-white
+        filter drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.10))
+
+    &__wrap__history-image
+        width w(410)
+        height w(500)
+        img
+            width 100%
+
+    &__wrap__history-text
+        margin-top w(10)
+        color $c-blue
+        font-family $ff-Gogol
+        font-size w(30)
+        font-weight 500
+        line-height w(40)
+
+    &__wrap__history-message
+        max-width w(480)
+
+    &__wrap__history-message-title
+        color $c-orange
+        font-family $ff-Montserrat
+        font-size w(18)
+        font-weight 500
+        line-height w(22)
+        letter-spacing w(0.18)
+
+    &__wrap__history-message-text
+        margin-top w(35)
+        color $c-black
+        font-family $ff-Montserrat
+        font-size w(16)
+        font-weight 500
+        line-height w(20)
+        letter-spacing w(0.16)
+        span
+            color $c-orange
+
+    &__wrap__quote
+        margin-top w(160)
+        margin-left w(50)
+
+    &__wrap__description
+        position relative
+        max-width w(480)
+        margin-top w(45)
+        display flex
+        flex-direction column
+        justify-content center
+        align-self center
+
+    &__wrap__description-img
+        position absolute
+        bottom w(0)
+        left -60%
+        width w(190)
+        height w(200)
+        img
+            width 100%
+
+    &__wrap__slider
+        margin-top w(135)
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+
+    &__wrap__slider-title
+        color $c-blue
+        font-family $ff-Gogol
+        font-size w(30)
+        font-weight 400
+        line-height w(50)
+    
+    &__wrap__slider-content
+        margin w(35) 0 w(35)
+        display flex
+        flex-direction row
+        justify-content space-between
+
+    &__wrap__content-card
+        padding w(10)
+        border w(1) solid #F5F5F5
+        background $c-white
+        box-shadow w(2) w(2) w(4) w(0) rgba(0, 0, 0, 0.10)
+
+    &__wrap__content-card-img
+        width w(240)
+        height w(240)
+        img
+            width 100%
+
+    &__wrap__content-card-text
+        padding w(21) w(16)
+        color $c-black
+        font-family $ff-Montserrat
+        font-size w(16)
+        font-weight 400
+        line-height w(20)
+        background-color #F5F5F5
+        span
+            font-weight 700
+
+    &__wrap__slider-button
+        padding w(20) w(80)
+        border-radius w(100)
+        background $c-orange
+        color $c-white
+        text-align center
+        font-family $ff-Montserrat
+        font-size w(16)
+        font-weight 500
+        line-height w(20)
+        text-decoration underline
+        transition 0.5s
+        &:hover
+            background $c-white
+            color $c-orange
+            border w(1) solid $c-orange
+            transition 0.5s
+
+    &__wrap__block
+        margin-top w(140)
+        display flex
+        flex-direction row
+        justify-content space-between
+
+    &__wrap__block-info-paper
+        position relative
+
+    &__wrap__block-info-text
+        position relative
+        z-index 1
+        transform: rotate(-7.525deg);
+
+    &__wrap__block-paper
+        position absolute
+        top w(-120)
+        left w(-80)
+        width w(600)
+        height w(600)
+        img
+            width 100%
+
+    &__underline-block
+        position absolute
+        max-width w(450)
+        left w(-30)
+        bottom w(15)
+
+    &__wrap__block-text
+        margin-top w(200)
+        max-width w(480)
+
+    &__wrap__block-card
+        position relative
+        padding w(200) w(60) w(72) 
+        width w(500)
+        height 100%
+        flex-shrink 0
+        background $c-orange
+
+    &__wrap__block-card-title
+        color $c-white
+        font-family $ff-Gogol
+        font-size w(30)
+        font-weight 400
+        line-height w(36)
+        transform rotate(-6.54deg)
+
+    &__wrap__block-card-subtitle
+        margin-top w(60)
+
+    &__wrap__card-subtitle
+        position relative
+        color $c-white
+        font-family $ff-Gogol
+        font-size w(30)
+        font-weight 400
+        line-height w(37)
+
+    &__underline-subtitle
+        position absolute
+        width 100%
+        left w(0)
+        bottom w(10)
+        img
+            width 100%
+
+    &__wrap__block-card-prod
+        position absolute
+        width w(325)
+        height w(395)
+        top w(-130)
+        right w(0)
+        flex-shrink 0
+        img
+            width 100%
+
+    &__wrap__block-card-author
+        position absolute
+        width w(250)
+        height w(215)
+        top w(-35)
+        left w(30)
+        flex-shrink 0
+        img
+            width 100%
