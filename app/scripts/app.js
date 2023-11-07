@@ -33,4 +33,23 @@ $(() => {
       $('.content').addClass('disabled');
       $('.promo').removeClass('disabled');
     });
+
+    $(document).ready(function() {
+
+      $(".promo__list__card-link-text").on('click', function(event) {
+        event.preventDefault();
+    
+        let promoCard = $(this).closest(".promo__list__card");
+        let cardImageSrc = promoCard.find(".promo__list__card-img img").attr("src");
+        let cardTitle = promoCard.find(".promo__list__card-title").text();
+        let cardSubtitle = promoCard.find(".promo__list__card-subtitle").text();
+    
+
+        if (cardTitle && cardSubtitle && cardImageSrc) {
+          $(".content__wrap__content-item-image").html('<img src="' + cardImageSrc + '" alt=""/>');
+          $(".content__wrap__content-name").text(cardTitle);
+          $(".content__wrap__content-surname").text(cardSubtitle);
+        }
+      });
+    });
 });
