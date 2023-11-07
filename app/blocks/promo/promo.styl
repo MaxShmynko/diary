@@ -2,6 +2,10 @@
     padding w(40) w(100)
     height 100%
     background url(/images/bg.png) lightgray 0% 0% / 100px 100px repeat
+    overflow hidden
+    +below(768px)
+        padding wm(40) wm(15)
+        height 100%
 
     &__image-fruct
         position absolute
@@ -18,6 +22,9 @@
         height w(35)
         img
             width 100%
+        +below(768px)
+            width wm(140)
+            height wm(35)
 
     &__wrap__header-line
         margin 0 w(15) 0
@@ -25,6 +32,10 @@
         height w(15)
         img
             width 100%
+        +below(768px)
+            margin wm(10) wm(15) 0
+            width wm(20)
+            height wm(15)
 
     &__wrap
         margin-top w(50)
@@ -87,7 +98,7 @@
         position absolute
         top w(500)
         left w(0)
-        width 100vw
+        width 100%
         img
             width 100%
 
@@ -107,14 +118,34 @@
         align-items center
 
     &__wrap__footer-link
-        position relative
         width w(55)
         height w(55)
         background-color $c-orange
         border-radius 50%
         margin-right w(25)
+        transition 0.2s
         &:last-child
             margin-right 0
+        &:hover
+            background-color $c-white
+            .vk
+                display none
+            .vk-hover
+                display block
+
+            .od
+                display none
+            .od-hover
+                display block
+
+            .tg
+                display none
+            .tg-hover
+                display block
+
+            img
+                width w(37)
+                height w(37)
         img
             width w(40)
             height w(40)
@@ -271,6 +302,10 @@
         height w(30)
         img
             width 100%
+
+.footer-link-od-over{
+    display none
+}
 
 .promo__wrap__list .slick-slide.slick-active .promo__list__card-title {
     color: #fff;

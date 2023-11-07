@@ -17,15 +17,15 @@ mixin content()
                 +e.wrap__content-item-arrow
                     img(src='/images/arrow-slider-prev.png')
                 +e.wrap__content-item-image
-                    img(src='/images/picture-item-1.png')
+                    //- img(src='/images/picture-item-1.png')
                 +e.wrap__content-item-arrow
                     img(src='/images/arrow-slider-next.png')
             +e.wrap__content-col
                 +e('p').wrap-subtitle Дорогой дневник...
                 +e.wrap__content-text
-                    +e.wrap__content-title Анастасии
+                    +e.wrap__content-title.content__wrap__content-name
                         img( class= 'content__underline' src='./images/underline.svg')
-                    +e.wrap__content-title Скомороховой
+                    +e.wrap__content-title.content__wrap__content-surname
                         img( class= 'content__underline' src='./images/underline.svg')
                     +e.wrap__content-subtitle домохозяйка, мечтает о море
                         img( class= 'content__underline' src='./images/underline.svg')
