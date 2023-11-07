@@ -3,11 +3,18 @@
     padding-top w(45)
     height 100%
     background url(/images/bg.png) lightgray 0% 0% / 100px 100px repeat
+    +below(768px)
+        padding wm(35) wm(15)
+        height 100%
 
     &__wrap__header
         display flex
         flex-direction row
         justify-content space-between
+        +below(768px)
+            flex-direction column-reverse
+            justify-content center
+            align-items center
 
     &__wrap__header-logo
         display flex
@@ -19,6 +26,9 @@
         height w(35)
         img
             width 100%
+        +below(768px)
+            width wm(140)
+            height wm(35)
 
     &__wrap__header-line
         margin 0 w(15) 0
@@ -26,6 +36,10 @@
         height w(15)
         img
             width 100%
+        +below(768px)
+            margin 0 wm(15) 0
+            width wm(20)
+            height wm(15)
 
     &__wrap__header-link
         display flex
@@ -33,6 +47,8 @@
         justify-content flex-start
         align-items center
         text-decoration none
+        +below(768px)
+            margin-top wm(60)
 
     &__wrap__header-link-text
         margin-left w(15)
@@ -42,6 +58,9 @@
         font-size w(26)
         font-weight 400
         line-height normal
+        +below(768px)
+            margin-left wm(15)
+            font-size wm(30)
 
      &__wrap-subtitle
         color $c-blue
@@ -50,6 +69,10 @@
         font-weight 500
         line-height w(22)
         letter-spacing w(0.22)
+        +below(768px)
+            font-size wm(22)
+            line-height wm(22)
+            letter-spacing wm(0.2)
 
     &__wrap__content
         margin w(45)
@@ -57,11 +80,18 @@
         flex-direction row
         justify-content space-between
         align-items center
+        +below(768px)
+            flex-direction column-reverse
+            margin wm(0)
+            align-items center
+            justify-content center
 
     &__wrap__content-text
         margin-top w(20)
         display flex
         flex-direction column
+        +below(768px)
+            margin-top wm(20)
 
     &__wrap__content-title
         position relative
@@ -70,6 +100,9 @@
         font-size w(55)
         font-weight 400
         line-height w(70)
+        +below(768px)
+            font-size wm(45)
+            line-height wm(45)
 
     &__wrap__content-subtitle
         position relative
@@ -78,12 +111,28 @@
         font-size w(30)
         font-weight 400
         line-height w(50)
+        +below(768px)
+            display none
 
     &__underline
         position absolute
         max-width w(455)
         left w(0)
         bottom w(10)
+        +below(768px)
+            max-width 100%
+            left wm(0)
+            bottom wm(10)
+            height wm(2)
+
+    &__wrap__content-col
+        display flex
+        flex-direction column
+        justify-content flex-start
+        +below(768px)
+            margin-top wm(60)
+            align-items center
+            justify-content center
 
     &__wrap__content-item
         display flex
@@ -104,12 +153,18 @@
         background-size cover
         display flex
         flex-direction column
+        +below(768px)
+            background-image none
+            padding wm(150) wm(0) wm(0)
 
     &__wrap__col
         margin-top w(35)
         display flex
         flex-direction row
         justify-content flex-start
+        +below(768px)
+            flex-direction column
+            margin-top wm(30)
 
     &__wrap__col-question
         margin-top w(15)
@@ -117,9 +172,15 @@
         display flex
         flex-direction row
         justify-content flex-start
+        +below(768px)
+            margin-top wm(15)
+            width 100%
 
     &__wrap__col-answer
         margin-left w(25)
+        +below(768px)
+            margin-left wm(0)
+            display none
 
     &__wrap__question-text
         color $c-orange
@@ -129,6 +190,11 @@
         line-height normal
         &:last-child
             margin-left w(10)
+        +below(768px)
+            font-size wm(18)
+            line-height wm(26)
+            &:last-child
+                margin-left wm(10)
 
     &__wrap__answer-text
         position relative
@@ -137,12 +203,25 @@
         font-size w(40)
         font-weight 500
         line-height w(50)
+        +below(768px)
+            font-size wm(32)
+            line-height wm(34)
 
     &__underline-info
         position absolute
         max-width w(705)
         left w(-30)
         bottom w(15)
+        +below(768px)
+            max-width 100%
+            left wm(0)
+            bottom wm(5)
+
+    &__wrap__col-answer-mobile
+        display none
+        +below(768px)
+            display block
+            margin-top wm(20)
 
     &__wrap__history
         position relative
@@ -150,6 +229,9 @@
         display flex
         flex-direction row
         justify-content space-between
+        +below(768px)
+            flex-direction column
+            justify-content flex-start
 
     &__wrap__history-paper 
         position absolute
@@ -159,6 +241,15 @@
         height w(550)
         img
             width 100%
+        +below(768px)
+            display none
+    
+    &__wrap__history-paper-mobile
+        display none
+        img
+            width 100%
+        +below(768px)
+            display none
 
     &__wrap__history-prod
         position absolute
