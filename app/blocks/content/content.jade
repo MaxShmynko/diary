@@ -204,3 +204,25 @@ mixin content()
                             img( class= 'content__underline-subtitle' src='./images/underline-block.svg')
                         +e.wrap__card-subtitle женщину
                             img( class= 'content__underline-subtitle' src='./images/underline-block.svg')
+        +e.wrap__footer
+                +e.wrap__footer-sharing
+                    +e('a').wrap__footer-link(href='#')
+                        +e.wrap__footer-link-vk
+                            img( class="vk" src='/images/vk.svg')
+                            img( class="vk-hover footer-link-od-over" src='/images/vk-hover.svg')
+                    +e('a').wrap__footer-link(href='#')
+                        +e.wrap__footer-link-od
+                            img(class="od" src='/images/od.svg')
+                            img( class="od-hover footer-link-od-over" src='/images/od-hover.svg')
+                    +e('a').wrap__footer-link(href='#')
+                        +e.wrap__footer-link-tg
+                            img(class="tg" src='/images/tg.svg')
+                            img( class="tg-hover footer-link-od-over" src='/images/tg-hover.svg')
+                +e.wrap__footer-text © 2023,  Shkulev Media Holding<br>Creative Studio
+                +e.wrap__footer-logo
+                    +e.wrap__header-image
+                        img(src='/images/logo-mag.svg')
+                    +e.wrap__header-line
+                        img(src='/images/line.png')
+                    +e.wrap__header-image
+                        img(src='/images/logo-woman.svg')

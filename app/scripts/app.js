@@ -9,7 +9,7 @@ $(() => {
         slidesToScroll: 1,
         vertical: false,
         variableWidth: true,
-        speed: 700,
+        speed: 200,
         centerMode: true,
         prevArrow: $('.promo__wrap__button-prev'),
         nextArrow: $('.promo__wrap__button-next'),
@@ -32,7 +32,7 @@ $(() => {
           slidesToScroll: 1,
           vertical: false,
           variableWidth: true,
-          speed: 700,
+          speed: 200,
           centerMode: true,
           prevArrow: $('.content__wrap__button-prev'),
           nextArrow: $('.content__wrap__button-next'),
@@ -69,12 +69,18 @@ $(() => {
     $('.promo__list__card-link').click(function(){
       $('.promo').addClass('disabled');
       $('.content').removeClass('disabled');
+      function foo() {
+        $(".content__wrap__button-prev").click();
+        }
+        
+        setTimeout(foo, 1000);
     });
 
     $('.content__wrap__header-link').click(function(){
       $('.content').addClass('disabled');
       $('.promo').removeClass('disabled');
     });
+    
 
     $(document).ready(function() {
 

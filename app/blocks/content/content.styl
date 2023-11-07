@@ -143,12 +143,18 @@
         justify-content flex-start
         align-items center
 
+    &__wrap__content-item-arrow
+        +below(768px)
+            display none
+
     &__wrap__content-item-image
         width w(530)
         height w(470)
         flex-shrink 0
         img
             width 100%
+        +below(768px)
+            width wm(300)
 
     &__wrap__info
         padding w(150) w(105) w(115)
@@ -392,7 +398,9 @@
         justify-content center
         align-items center
         +below(768px)
-            margin-top wm(100)
+            overflow hidden
+            width 95%
+            margin wm(100) auto
 
     &__wrap__slider-title
         color $c-blue
@@ -410,12 +418,20 @@
         flex-direction row
         justify-content space-between
         gap w(23)
+        +below(768px)
+            position relative
 
     &__wrap__content-card
         padding w(10)
         border w(1) solid #F5F5F5
         background $c-white
         box-shadow w(2) w(2) w(4) w(0) rgba(0, 0, 0, 0.10)
+        +below(768px)
+            width wm(260) !important
+            height wm(370) !important
+            margin 0 wm(28)
+            padding wm(10)
+            border wm(1) solid #F5F5F5
 
     &__wrap__content-card-img
         width w(240)
@@ -433,10 +449,14 @@
         font-weight 400
         line-height w(20)
         background-color #F5F5F5
+        +below(768px)
+            padding wm(210) wm(16) wm(35) wm(16)
+            font-size wm(15)
+            line-height wm(20)
         span
             font-weight 700
             +below(768px)
-                font-size wm(16)
+                font-size wm(15)
 
     &__wrap__slider-button
         padding w(20) w(80)
@@ -590,36 +610,89 @@
     &__wrap__button
         display none
         +below(768px)
-            display block
+            position absolute
+            display flex
+            width 96%
+            justify-content space-between
 
-    &__wrap__content-card
+    &__wrap__footer
+        position relative
+        z-index 1
+        margin-top w(150)
+        display flex
+        flex-direction row
+        justify-content space-between
+        align-items center
         +below(768px)
-            width wm(260) !important
-            height wm(370) !important
+            flex-direction column-reverse
 
+    &__wrap__footer-sharing
+        display flex
+        flex-direction row
+        justify-content flex-start
+        align-items center
 
-    // &__wrap__button
-    //     position absolute
-    //     z-index 1
-    //     top 50%
-    //     left 25%
-    //     max-width w(550)
-    //     width 100%
-    //     display flex
-    //     flex-direction row
-    //     justify-content space-between
+    &__wrap__footer-link
+        width w(55)
+        height w(55)
+        background-color $c-orange
+        border-radius 50%
+        margin-right w(25)
+        transition 0.2s
+        &:last-child
+            margin-right 0
+        &:hover
+            background-color $c-white
+            .vk
+                display none
+            .vk-hover
+                display block
 
-    // &__wrap__button-prev
-    //     width w(40)
-    //     height w(70)
-    //     cursor pointer
-    //     img
-    //         width 100%
+            .od
+                display none
+            .od-hover
+                display block
 
-    // &__wrap__button-next
-    //     width w(40)
-    //     height w(70)
-    //     cursor pointer
-    //     img
-    //         width 100%
+            .tg
+                display none
+            .tg-hover
+                display block
+
+            img
+                width w(37)
+                height w(37)
+        img
+            width w(40)
+            height w(40)
+            position absolute
+            top 50%
+            transform translate(15%, -50%)
+        +below(768px)
+            width wm(55)
+            height wm(55)
+            img
+                width wm(40)
+                height wm(40)
+                position absolute
+                top 85%
+                transform translate(15%, -50%)
+
+    &__wrap__footer-text
+        color $c-black
+        text-align center
+        font-family $ff-Montserrat
+        font-size w(14)
+        font-weight 500
+        line-height w(20)
+        letter-spacing w(0.7)
+        +below(768px)
+            margin wm(30) 0
+            font-size wm(14)
+            line-height wm(18)
+            letter-spacing wm(0.7)
+
+    &__wrap__footer-logo
+        display flex
+        flex-direction row
+        justify-content flex-end
 
