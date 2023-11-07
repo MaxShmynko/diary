@@ -22,6 +22,48 @@ $(() => {
         $('.promo__slider__counter-number').text(counterText);
       });
     });
+    
+
+    $(document).ready(function(){
+      function initSlider() {
+        $('.content__wrap__slider-content').slick({
+          infinite: true, 
+          slidesToShow: 1, 
+          slidesToScroll: 1,
+          vertical: false,
+          variableWidth: true,
+          speed: 700,
+          centerMode: true,
+          prevArrow: $('.content__wrap__button-prev'),
+          nextArrow: $('.content__wrap__button-next'),
+        });
+      }
+    
+      function destroySlider() {
+        // Если слайдер уже инициализирован, уничтожьте его
+        if ($('.content__wrap__slider-content').hasClass('slick-initialized')) {
+          $('.content__wrap__slider-content').slick('unslick');
+        }
+      }
+    
+      // Функция, которая будет вызвана при изменении размера окна
+      function handleSliderBasedOnResolution() {
+        if (window.innerWidth <= 768) {
+          initSlider();
+        } else {
+          destroySlider();
+        }
+      }
+    
+      // Вызов функции при загрузке страницы
+      handleSliderBasedOnResolution();
+    
+      // Добавление обработчика события на изменение размера окна
+      $(window).on('resize', function () {
+        handleSliderBasedOnResolution();
+      });
+    });
+
     $('.content').addClass('disabled');
 
     $('.promo__list__card-link').click(function(){

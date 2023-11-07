@@ -406,6 +406,7 @@
         display flex
         flex-direction row
         justify-content space-between
+        gap w(23)
 
     &__wrap__content-card
         padding w(10)
@@ -431,6 +432,8 @@
         background-color #F5F5F5
         span
             font-weight 700
+            +below(768px)
+                font-size wm(16)
 
     &__wrap__slider-button
         padding w(20) w(80)
@@ -580,3 +583,40 @@
             height wm(160)
             top wm(-25)
             left wm(30)
+
+    &__wrap__button
+        display none
+        +below(768px)
+            display block
+
+    &__wrap__content-card
+        +below(768px)
+            width wm(260) !important
+            height wm(370) !important
+
+
+    // &__wrap__button
+    //     position absolute
+    //     z-index 1
+    //     top 50%
+    //     left 25%
+    //     max-width w(550)
+    //     width 100%
+    //     display flex
+    //     flex-direction row
+    //     justify-content space-between
+
+    // &__wrap__button-prev
+    //     width w(40)
+    //     height w(70)
+    //     cursor pointer
+    //     img
+    //         width 100%
+
+    // &__wrap__button-next
+    //     width w(40)
+    //     height w(70)
+    //     cursor pointer
+    //     img
+    //         width 100%
+
