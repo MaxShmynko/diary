@@ -11,11 +11,20 @@
         position absolute
         top w(25)
         left w(0)
+        img
+            width 100%
+        +below(768px)
+            width wm(110)
+            height wm(105)
+            top wm(125)
+            left wm(-30)
 
     &__wrap__header
         display flex
         flex-direction row
         justify-content flex-end
+        +below(768px)
+            justify-content space-between
 
     &__wrap__header-image
         width w(140)
@@ -40,6 +49,13 @@
     &__wrap
         margin-top w(50)
         margin-left w(100)
+        +below(768px)
+            margin-top wm(90)
+            margin-left wm(0)
+            display flex
+            flex-direction column
+            justify-content center
+            align-items center
 
     &__wrap-subtitle
         color $c-blue
@@ -48,6 +64,10 @@
         font-weight 500
         line-height w(22)
         letter-spacing w(0.22)
+        +below(768px)
+            font-size wm(20)
+            line-height wm(22)
+            letter-spacing wm(0.2)
 
     &__wrap__content
         margin-top w(15)
@@ -60,6 +80,13 @@
         height w(150)
         flex-shrink 0
         margin-right w(40)
+        +below(768px)
+            position absolute
+            width wm(70)
+            height wm(120)
+            left 20%
+            img
+                width 100%
 
     &__wrap__content-title
         position relative
@@ -68,6 +95,11 @@
         font-size w(55)
         font-weight 400
         line-height w(60)
+        +below(768px)
+            font-size wm(45)
+            line-height wm(50)
+            &:first-child
+                margin-left wm(130)
 
     &__wrap__text
         margin-top w(55)
@@ -78,6 +110,10 @@
         font-weight 400
         line-height w(22)
         letter-spacing w(0.34)
+        +below(768px)
+            max-width 100%
+            font-size wm(17)
+            line-height wm(22)
 
     &__image-main
         position absolute
@@ -87,12 +123,20 @@
         z-index 1
         img
             width 100%
+        +below(768px)
+            position relative
+            max-width 100%
+            top w(0)
+            right w(0)
 
     &__underline
         position absolute
         max-width w(645)
         left w(-40)
         bottom w(10)
+        +below(768px)
+            max-width 100%
+            height wm(3)
 
     &__bg-slider
         position absolute
@@ -101,6 +145,12 @@
         width 100%
         img
             width 100%
+        +below(768px)
+            top wm(900)
+            height wm(450)
+            img
+                width 100%
+                height 100%
 
     &__wrap__footer
         position relative
@@ -110,6 +160,8 @@
         flex-direction row
         justify-content space-between
         align-items center
+        +below(768px)
+            flex-direction column-reverse
 
     &__wrap__footer-sharing
         display flex
@@ -152,6 +204,15 @@
             position absolute
             top 50%
             transform translate(15%, -50%)
+        +below(768px)
+            width wm(55)
+            height wm(55)
+            img
+                width wm(40)
+                height wm(40)
+                position absolute
+                top 85%
+                transform translate(15%, -50%)
 
     &__wrap__footer-text
         color $c-black
@@ -161,6 +222,11 @@
         font-weight 500
         line-height w(20)
         letter-spacing w(0.7)
+        +below(768px)
+            margin wm(30) 0
+            font-size wm(14)
+            line-height wm(18)
+            letter-spacing wm(0.7)
 
     &__wrap__footer-logo
         display flex
@@ -175,6 +241,9 @@
         font-weight 400
         line-height w(45)
         text-align center
+        +below(768px)
+            font-size wm(20)
+            line-height wm(20)
 
     &__list__card-subtitle
         color $c-blue
@@ -200,6 +269,9 @@
         font-size w(55)
         font-weight 400
         line-height w(50)
+        +below(768px)
+            font-size wm(30)
+            line-height wm(35)
 
     &__slider__counter-line
         width w(15)
@@ -214,6 +286,9 @@
         font-size w(22)
         font-weight 500
         line-height w(22)
+        +below(768px)
+            font-size wm(22)
+            line-height wm(22)
 
     &__slider
         overflow hidden
@@ -225,6 +300,8 @@
         flex-direction row
         justify-content center
         align-items center
+        +below(768px)
+            overflow visible
 
     &__wrap__button
         position absolute
@@ -236,6 +313,11 @@
         display flex
         flex-direction row
         justify-content space-between
+        +below(768px)
+            max-width 90vw
+            top -8%
+            left 0%
+            z-index 2
 
     &__wrap__button-prev
         width w(40)
@@ -268,6 +350,10 @@
         width w(400) !important
         height w(515) !important
         transition 1.5s
+        +below(768px)
+            width 70vw !important
+            height wm(320) !important
+            transition 0.1s
 
     &__list__card-vector
         position absolute
@@ -278,6 +364,10 @@
         display none
         img
             width 100%
+        +below(768px)
+            left wm(45)
+            width wm(25)
+            height wm(75)
 
     &__list__card-link
         margin-top w(20)
@@ -286,6 +376,8 @@
         justify-content center
         align-items center
         text-decoration none
+        +below(768px)
+            margin-top wm(30)
 
     &__list__card-link-text
         color $c-white
@@ -296,12 +388,19 @@
         line-height w(50)
         margin-right w(30)
         text-decoration none
+        +below(768px)
+            font-size wm(18)
+            line-height wm(20)
+            margin-right wm(10)
 
     &__list__card-link-arrow
         width w(35)
         height w(30)
         img
             width 100%
+        +below(768px)
+            width wm(20)
+            height wm(20)
 
 .footer-link-od-over{
     display none
@@ -332,7 +431,13 @@
 
 .promo__wrap__list .slick-slide.slick-active .promo__list__card{
     margin-top 0
-} 
+}
+// @media (max-width:768px) {
+//     .promo__wrap__list .slick-slide.slick-cloned .promo__list__card{
+//         display: none !important;
+//     }
+// }
+
 
 .promo__wrap__list .slick-slide.slick-active .promo__list__card-img{
     width w(350)
@@ -340,6 +445,37 @@
     position absolute
     top w(-10)
     padding-left w(50)
+}
+@media (max-width:768px) {
+    .promo__wrap__list .slick-slide.slick-active .promo__list__card-title {
+        color: #fff;
+        text-align: left;
+        padding-top 61%
+        padding-left 10%
+        margin-top 0
+        font-size wm(40)
+        line-height wm(40)
+    }
+
+    .promo__wrap__list .slick-slide.slick-active .promo__list__card-img{
+        width wm(190)
+        height wm(170)
+        position absolute
+        top wm(-10)
+        left wm(20)
+    }
+
+    .promo__wrap__list .slick-slide.slick-active .promo__list__card-subtitle {
+        color #fff
+        text-align right
+        padding-right 10%
+        font-size wm(30)
+        line-height wm(35)
+    }
+
+    .promo__wrap__list .slick-slide.slick-active{
+        transition 0.2s
+    }
 }
 
 .promo__wrap__list .slick-slide.slick-active .promo__list__card-vector {
