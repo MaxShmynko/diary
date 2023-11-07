@@ -249,7 +249,9 @@
         img
             width 100%
         +below(768px)
-            display none
+            display block
+            width 100%
+            margin-top wm(100)
 
     &__wrap__history-prod
         position absolute
@@ -259,6 +261,11 @@
         left w(-85)
         img
             width 100%
+        +below(768px)
+            width wm(140)
+            height wm(145)
+            bottom wm(130)
+            left wm(-55)
 
     &__wrap__history-photo
         position absolute
@@ -268,6 +275,11 @@
         left w(356)
         img
             width 100%
+        +below(768px)
+            width wm(140)
+            height wm(145)
+            bottom wm(30)
+            left wm(220)
 
     &__wrap__history-picture
         position relative
@@ -280,6 +292,9 @@
         height w(500)
         img
             width 100%
+        +below(768px)
+            width 100%
+            height wm(400)
 
     &__wrap__history-text
         margin-top w(10)
@@ -288,9 +303,17 @@
         font-size w(30)
         font-weight 500
         line-height w(40)
+        +below(768px)
+            margin-left wm(20)
+            margin-top wm(10)
+            font-size wm(28)
+            line-height wm(35)
 
     &__wrap__history-message
         max-width w(480)
+        +below(768px)
+            max-width 100%
+            margin-top wm(70)
 
     &__wrap__history-message-title
         color $c-orange
@@ -299,6 +322,9 @@
         font-weight 500
         line-height w(22)
         letter-spacing w(0.18)
+        +below(768px)
+            font-size wm(18)
+            line-height wm(26)
 
     &__wrap__history-message-text
         margin-top w(35)
@@ -310,10 +336,22 @@
         letter-spacing w(0.16)
         span
             color $c-orange
+        +below(768px)
+            font-size wm(18)
+            line-height wm(26)
+            margin-top wm(20)
 
     &__wrap__quote
         margin-top w(160)
         margin-left w(50)
+        +below(768px)
+            display none
+
+    &__wrap__quote-mobile
+        display none
+        +below(768px)
+            display block
+            margin-top wm(50)
 
     &__wrap__description
         position relative
@@ -323,6 +361,9 @@
         flex-direction column
         justify-content center
         align-self center
+        +below(768px)
+            max-width 100%
+            margin-top wm(50)
 
     &__wrap__description-img
         position absolute
@@ -332,6 +373,14 @@
         height w(200)
         img
             width 100%
+        +below(768px)
+            position relative
+            width wm(190)
+            height wm(200)
+            margin auto
+            margin-bottom wm(50)
+            bottom wm(0)
+            left wm(0)
 
     &__wrap__slider
         margin-top w(135)
@@ -339,6 +388,8 @@
         flex-direction column
         justify-content center
         align-items center
+        +below(768px)
+            margin-top wm(100)
 
     &__wrap__slider-title
         color $c-blue
@@ -346,6 +397,9 @@
         font-size w(30)
         font-weight 400
         line-height w(50)
+        +below(768px)
+            font-size wm(32)
+            line-height wm(50)
     
     &__wrap__slider-content
         margin w(35) 0 w(35)
@@ -363,6 +417,8 @@
         width w(240)
         height w(240)
         img
+            width 100%
+        +below(768px)
             width 100%
 
     &__wrap__content-card-text
@@ -393,12 +449,20 @@
             color $c-orange
             border w(1) solid $c-orange
             transition 0.5s
+        +below(768px)
+            font-size wm(16)
+            line-height wm(20)
+            padding wm(20) wm(80)
 
     &__wrap__block
         margin-top w(140)
         display flex
         flex-direction row
         justify-content space-between
+        +below(768px)
+            margin-top wm(80)
+            flex-direction column
+            justify-content center
 
     &__wrap__block-info-paper
         position relative
@@ -406,7 +470,9 @@
     &__wrap__block-info-text
         position relative
         z-index 1
-        transform: rotate(-7.525deg);
+        transform rotate(-7.525deg)
+        +below(768px)
+            margin-left wm(40)
 
     &__wrap__block-paper
         position absolute
@@ -416,16 +482,27 @@
         height w(600)
         img
             width 100%
+        +below(768px)
+            top wm(-75)
+            left wm(-15)
+            width wm(400)
+            height wm(200)
 
     &__underline-block
         position absolute
         max-width w(450)
         left w(-30)
         bottom w(15)
+        +below(768px)
+            max-width 100%
+            height wm(3)
 
     &__wrap__block-text
         margin-top w(200)
         max-width w(480)
+        +below(768px)
+            margin-top wm(95)
+            max-width 100%
 
     &__wrap__block-card
         position relative
@@ -434,6 +511,10 @@
         height 100%
         flex-shrink 0
         background $c-orange
+        +below(768px)
+            width 100%
+            padding wm(150) wm(20) wm(72)
+            margin-top wm(130)
 
     &__wrap__block-card-title
         color $c-white
@@ -442,9 +523,14 @@
         font-weight 400
         line-height w(36)
         transform rotate(-6.54deg)
+        +below(768px)
+            font-size wm(20)
+            line-height wm(36)
 
     &__wrap__block-card-subtitle
         margin-top w(60)
+        +below(768px)
+            margin-top wm(60)
 
     &__wrap__card-subtitle
         position relative
@@ -453,6 +539,9 @@
         font-size w(30)
         font-weight 400
         line-height w(37)
+        +below(768px)
+            font-size wm(25)
+            line-height wm(37)
 
     &__underline-subtitle
         position absolute
@@ -471,6 +560,11 @@
         flex-shrink 0
         img
             width 100%
+        +below(768px)
+            width wm(250)
+            height wm(330)
+            top wm(-130)
+            right wm(0)
 
     &__wrap__block-card-author
         position absolute
@@ -481,3 +575,8 @@
         flex-shrink 0
         img
             width 100%
+        +below(768px)
+            width wm(150)
+            height wm(160)
+            top wm(-25)
+            left wm(30)
