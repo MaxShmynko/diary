@@ -9,7 +9,7 @@ $(() => {
           slidesToScroll: 1,
           vertical: false,
           variableWidth: true,
-          speed: 500,
+          speed: 700,
           centerMode: true,
           prevArrow: $('.promo__wrap__button-prev'),
           nextArrow: $('.promo__wrap__button-next'),

@@ -209,12 +209,14 @@
     &__wrap__button-prev
         width w(40)
         height w(70)
+        cursor pointer
         img
             width 100%
 
     &__wrap__button-next
         width w(40)
         height w(70)
+        cursor pointer
         img
             width 100%
 
@@ -232,8 +234,9 @@
         flex-direction column
         justify-content center
         align-items center
-        width w(400)
-        height w(515)
+        width w(400) !important
+        height w(515) !important
+        transition 1.5s
 
     &__list__card-vector
         position absolute
@@ -274,7 +277,7 @@
     text-align: left;
     padding-top 75%
     padding-left 10%
-    margin-top w(0)
+    margin-top 0
 }
 
 .promo__wrap__list .slick-slide.slick-active .promo__list__card-subtitle {
@@ -284,14 +287,15 @@
     line-height w(75)
 }
 
+
 .promo__wrap__list .slick-slide.slick-active{
-    margin 0 w(120) 0
+    // margin 0 w(120) 0
     background url(/images/slide-active-bg.png)
     background-size cover
-    width w(400)
-    height w(515)
+    // width w(400)
+    // height w(515) 
     border-radius w(40)
-    transition 1.5s
+    transition 2s
 }
 
 .promo__wrap__list .slick-slide.slick-active .promo__list__card{
@@ -299,7 +303,7 @@
 } 
 
 .promo__wrap__list .slick-slide.slick-active .promo__list__card-img{
-    width w(350) 
+    width w(350)
     height w(315)
     position absolute
     top w(-10)
