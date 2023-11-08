@@ -1,6 +1,6 @@
 mixin promo()
     +b('section').promo
-        +e.wrap__header
+        +e.wrap__header.fadeIn.wow(data-wow-duration="2s")
             +e.wrap__header-image
                 img(src='/images/logo-mag.svg')
             +e.wrap__header-line
@@ -8,8 +8,8 @@ mixin promo()
             +e.wrap__header-image
                 img(src='/images/logo-woman.svg')
         +e.wrap 
-            +e('p').wrap-subtitle Дорогой дневник...
-            +e.wrap__content
+            +e('p').wrap-subtitle.fadeInLeft.wow(data-wow-duration="1.5s") Дорогой дневник...
+            +e.wrap__content.fadeIn.wow(data-wow-duration="2s")
                 +e.wrap__content-number
                     img(src='/images/number.svg')
                 +e.wrap__content-text
@@ -19,103 +19,15 @@ mixin promo()
                         img( class= 'promo__underline' src='./images/underline.svg')
                     +e.wrap__content-title и уверенности
                         img( class= 'promo__underline' src='./images/underline.svg')
-            +e.image-main
+            +e.image-main.fadeInRight.wow(data-wow-duration="1.5s")
                 img(src='/images/picture-main.png')
-            +e.wrap__text Можно зайти с того, что есть вещи, в которых мы редко признаемся другим. Но которые хочется «выложить из головы», и тогда на помощь приходит дневник. Многие вели такие в детстве. А сейчас такой дневничок – это повод разобраться в себе, ответить на вопрос: кто я и стать увереннее.
-        +e.image-fruct
-            img(src='/images/picture-fruct.png')
+            +e.wrap__text.fadeIn.wow(data-wow-duration="3s") Можно зайти с того, что есть вещи, в которых мы редко признаемся другим. Но которые хочется «выложить из головы», и тогда на помощь приходит дневник. Многие вели такие в детстве. А сейчас такой дневничок – это повод разобраться в себе, ответить на вопрос: кто я и стать увереннее.
+        +e.image-fruct.fadeInLeft.wow(data-wow-duration="3.5s")
+            img(src='/images/picture-fruct.svg')
         +e.bg-slider
             img(src='/images/promo-bg-sliders.png')
-        +e.slider__counter
-            +e.slider__counter-number 1/7
-            +e.slider__counter-line
-                img(src='/images/choice-line.png')
-            +e.slider__counter-choice Выберите героиню
-        +e.slider
-            +e.wrap__list
-                +e.list__card(id='1')
-                    +e.list__card-img
-                        img(src='/images/promo__slider-1.png' alt="" class='card-img')
-                    +e.list__card-title Юлия
-                    +e.list__card-subtitle Колесникова
-                    +e.list__card-vector
-                        img(src='/images/slide-active-vector.png')
-                    +e('a').list__card-link(href='#')
-                        +e.list__card-link-text Смотреть дневник
-                        +e.list__card-link-arrow
-                            img(src='/images/slider-active-arrow.png')
-                +e.list__card(id='2')
-                    +e.list__card-img
-                        img(src='/images/promo__slider-2.png' alt="" class='card-img')
-                    +e.list__card-title Анастасия
-                    +e.list__card-subtitle Колесникова
-                    +e.list__card-vector
-                        img(src='/images/slide-active-vector.png')
-                    +e('a').list__card-link(href='#')
-                        +e.list__card-link-text Смотреть дневник
-                        +e.list__card-link-arrow
-                            img(src='/images/slider-active-arrow.png')
-                +e.list__card(id='3')
-                    +e.list__card-img
-                        img(src='/images/promo__slider-3.png' alt="" class='card-img')
-                    +e.list__card-title Полина
-                    +e.list__card-subtitle Гончаренко
-                    +e.list__card-vector
-                        img(src='/images/slide-active-vector.png')
-                    +e('a').list__card-link(href='#')
-                        +e.list__card-link-text Смотреть дневник
-                        +e.list__card-link-arrow
-                            img(src='/images/slider-active-arrow.png')
-                +e.list__card(id='4')
-                    +e.list__card-img
-                        img(src='/images/promo__slider-1.png' alt="" class='card-img')
-                    +e.list__card-title Юлия
-                    +e.list__card-subtitle Колесникова
-                    +e.list__card-vector
-                        img(src='/images/slide-active-vector.png')
-                    +e('a').list__card-link(href='#')
-                        +e.list__card-link-text Смотреть дневник
-                        +e.list__card-link-arrow
-                            img(src='/images/slider-active-arrow.png')
-                +e.list__card(id='5')
-                    +e.list__card-img
-                        img(src='/images/promo__slider-1.png' alt="" class='card-img')
-                    +e.list__card-title Юлия
-                    +e.list__card-subtitle Колесникова
-                    +e.list__card-vector
-                        img(src='/images/slide-active-vector.png')
-                    +e('a').list__card-link(href='#')
-                        +e.list__card-link-text Смотреть дневник
-                        +e.list__card-link-arrow
-                            img(src='/images/slider-active-arrow.png')
-                +e.list__card(id='6')
-                    +e.list__card-img
-                        img(src='/images/promo__slider-1.png' alt="" class='card-img')
-                    +e.list__card-title Юлия
-                    +e.list__card-subtitle Колесникова
-                    +e.list__card-vector
-                        img(src='/images/slide-active-vector.png')
-                    +e('a').list__card-link(href='#')
-                        +e.list__card-link-text Смотреть дневник
-                        +e.list__card-link-arrow
-                            img(src='/images/slider-active-arrow.png')
-                +e.list__card(id='7')
-                    +e.list__card-img
-                        img(src='/images/promo__slider-1.png' alt="" class='card-img')
-                    +e.list__card-title Юлия
-                    +e.list__card-subtitle Колесникова
-                    +e.list__card-vector
-                        img(src='/images/slide-active-vector.png')
-                    +e('a').list__card-link(href='#')
-                        +e.list__card-link-text Смотреть дневник
-                        +e.list__card-link-arrow
-                            img(src='/images/slider-active-arrow.png')
-            +e.wrap__button
-                +e.wrap__button-prev
-                    img(src='/images/arrow-slider-prev.png')
-                +e.wrap__button-next
-                    img(src='/images/arrow-slider-next.png')
-        +e.wrap__footer
+        +sliders('counter')
+        +e.wrap__footer.fadeIn.wow(data-wow-duration="2s")
             +e.wrap__footer-sharing
                 +e('a').wrap__footer-link(href='#')
                     +e.wrap__footer-link-vk
@@ -137,5 +49,3 @@ mixin promo()
                     img(src='/images/line.png')
                 +e.wrap__header-image
                     img(src='/images/logo-woman.svg')
-
-

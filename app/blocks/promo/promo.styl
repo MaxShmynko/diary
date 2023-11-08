@@ -11,6 +11,8 @@
         position absolute
         top w(25)
         left w(0)
+        width w(180)
+        height w(175)
         img
             width 100%
         +below(768px)
@@ -370,37 +372,36 @@
             height wm(75)
 
     &__list__card-link
+        position relative
+        z-index 4
         margin-top w(20)
         display flex
         flex-direction row
         justify-content center
         align-items center
         text-decoration none
-        +below(768px)
-            margin-top wm(30)
-
-    &__list__card-link-text
         color $c-white
         text-align center
         font-family $ff-Montserrat
         font-size w(18)
         font-weight 500
         line-height w(50)
-        margin-right w(30)
         text-decoration none
         +below(768px)
             font-size wm(18)
             line-height wm(20)
-            margin-right wm(10)
+            margin-top wm(30)
 
     &__list__card-link-arrow
         width w(35)
         height w(30)
+        margin-left w(30)
         img
             width 100%
         +below(768px)
             width wm(20)
             height wm(20)
+            margin-left wm(10)
 
 .footer-link-od-over{
     display none
