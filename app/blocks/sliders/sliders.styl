@@ -90,15 +90,7 @@
             line-height wm(18)
 
     &__slider
-        overflow hidden
-        width 78vw
-        margin-left w(100)
-        padding-top w(10)
         position relative
-        display flex
-        flex-direction row
-        justify-content center
-        align-items center
         +below(768px)
             overflow visible
 
@@ -106,7 +98,7 @@
         position absolute
         z-index 1
         top 50%
-        left 25%
+        left 30%
         max-width w(550)
         width 100%
         display flex
@@ -147,12 +139,8 @@
             width 100%
         
     &__list__card
-        margin-top 20%
+        margin-top w(70)
         position relative
-        display flex
-        flex-direction column
-        justify-content center
-        align-items center
         width w(400) !important
         height w(515) !important
         transition 1.5s
@@ -179,7 +167,7 @@
         display none
         position relative
         z-index 4
-        margin-top w(20)
+        margin-top w(30)
         display flex
         flex-direction row
         justify-content center
@@ -212,33 +200,31 @@
     display none
 }
 
-.sliders__wrap__list .slick-slide.slick-active .sliders__list__card-title {
+.sliders__wrap__list .slick-slide.slick-current .sliders__list__card-title {
     color: #fff;
-    text-align: left;
-    padding-top 75%
-    padding-left 10%
+    padding-top 77%
+    padding-right: 40%;
     margin-top 0
 }
 
-.sliders__wrap__list .slick-slide.slick-active .sliders__list__card-link {
+.sliders__wrap__list .slick-slide.slick-current .sliders__list__card-link {
     display: normal;
 }
 
-.sliders__wrap__list .slick-slide.slick-active .sliders__list__card-subtitle {
+.sliders__wrap__list .slick-slide.slick-current .sliders__list__card-subtitle {
     color #fff
-    text-align right
-    padding-right 10%
-    line-height w(75)
+    padding-left 20%
+    line-height w(55)
 }
 
-.sliders__wrap__list .slick-slide.slick-active{
+.sliders__wrap__list .slick-slide.slick-current {
     background url(/images/slide-active-bg.png)
     background-size cover
     border-radius w(40)
     // transition 2s
 }
 
-.sliders__wrap__list .slick-slide.slick-active .sliders__list__card{
+.sliders__wrap__list .slick-slide.slick-current .sliders__list__card{
     margin-top 0
 }
 // @media (max-width:768px) {
@@ -248,25 +234,25 @@
 // }
 
 
-.sliders__wrap__list .slick-slide.slick-active .sliders__list__card-img{
+.sliders__wrap__list .slick-slide.slick-current .sliders__list__card-img{
     width w(350)
     height w(315)
     position absolute
     top w(-10)
-    padding-left w(50)
+    padding-left w(30)
 }
 @media (max-width:768px) {
-    .sliders__wrap__list .slick-slide.slick-active .sliders__list__card-title {
+    .sliders__wrap__list .slick-slide.slick-current .sliders__list__card-title {
         color: #fff;
         text-align: left;
-        padding-top 61%
+        padding-top 64%
         padding-left 10%
         margin-top 0
-        font-size wm(40)
-        line-height wm(40)
+        font-size wm(30)
+        line-height wm(30)
     }
 
-    .sliders__wrap__list .slick-slide.slick-active .sliders__list__card-img{
+    .sliders__wrap__list .slick-slide.slick-current .sliders__list__card-img{
         width wm(190)
         height wm(170)
         position absolute
@@ -274,20 +260,20 @@
         left wm(20)
     }
 
-    .sliders__wrap__list .slick-slide.slick-active .sliders__list__card-subtitle {
+    .sliders__wrap__list .slick-slide.slick-current .sliders__list__card-subtitle {
         color #fff
         text-align right
         padding-right 10%
-        font-size wm(30)
+        font-size wm(27)
         line-height wm(35)
     }
 
-    .sliders__wrap__list .slick-slide.slick-active{
+    .sliders__wrap__list .slick-slide.slick-current {
         transition 0.2s
     }
 }
 
-.sliders__wrap__list .slick-slide.slick-active .sliders__list__card-vector {
+.sliders__wrap__list .slick-slide.slick-current .sliders__list__card-vector {
     display block
 }
 

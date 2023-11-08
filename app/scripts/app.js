@@ -13,7 +13,7 @@ $(() => {
 
   $('.sliders__wrap__list').slick({
     infinite: true, 
-    slidesToShow: 1, 
+    slidesToShow: 3, 
     slidesToScroll: 1,
     vertical: false,
     variableWidth: true,
@@ -23,6 +23,11 @@ $(() => {
     swipeToSlide: 1,
     prevArrow: $('.sliders__wrap__button-prev'),
     nextArrow: $('.sliders__wrap__button-next'),
+  });
+
+  $('.sliders__wrap__list').on('swipe', function(event, slick, direction){
+    console.log(direction);
+    // left
   });
 
   $('.sliders__slider').on('afterChange', function(event, slick, currentSlide){
@@ -70,19 +75,19 @@ $(() => {
     handleSliderBasedOnResolution();
   });
 
-  $(".promo__list__card-link-text").on('click', function(event) {
-    event.preventDefault();
+  // $(".promo__list__card-link-text").on('click', function(event) {
+  //   event.preventDefault();
 
-    let promoCard = $(this).closest(".promo__list__card");
-    let cardImageSrc = promoCard.find(".promo__list__card-img img").attr("src");
-    let cardTitle = promoCard.find(".promo__list__card-title").text();
-    let cardSubtitle = promoCard.find(".promo__list__card-subtitle").text();
+  //   let promoCard = $(this).closest(".promo__list__card");
+  //   let cardImageSrc = promoCard.find(".promo__list__card-img img").attr("src");
+  //   let cardTitle = promoCard.find(".promo__list__card-title").text();
+  //   let cardSubtitle = promoCard.find(".promo__list__card-subtitle").text();
 
 
-    if (cardTitle && cardSubtitle && cardImageSrc) {
-      $(".content__wrap__content-item-image").html('<img src="' + cardImageSrc + '" alt=""/>');
-      $(".content__wrap__content-name").text(cardTitle);
-      $(".content__wrap__content-surname").text(cardSubtitle);
-    }
-  });
+  //   if (cardTitle && cardSubtitle && cardImageSrc) {
+  //     $(".content__wrap__content-item-image").html('<img src="' + cardImageSrc + '" alt=""/>');
+  //     $(".content__wrap__content-name").text(cardTitle);
+  //     $(".content__wrap__content-surname").text(cardSubtitle);
+  //   }
+  // });
 });

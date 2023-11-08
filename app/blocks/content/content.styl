@@ -392,14 +392,10 @@
             left wm(0)
 
     &__wrap__slider
+        position relative
         margin-top w(135)
-        display flex
-        flex-direction column
-        justify-content center
-        align-items center
         +below(768px)
-            overflow hidden
-            width 95%
+            width 100%
             margin wm(100) auto
 
     &__wrap__slider-title
@@ -408,6 +404,7 @@
         font-size w(30)
         font-weight 400
         line-height w(50)
+        text-align center
         +below(768px)
             font-size wm(32)
             line-height wm(50)
@@ -420,6 +417,7 @@
         gap w(23)
         +below(768px)
             position relative
+            margin wm(35) 0 wm(55)
 
     &__wrap__content-card
         padding w(10)
@@ -480,6 +478,8 @@
             font-size wm(16)
             line-height wm(20)
             padding wm(20) wm(80)
+            margin-top wm(100)
+            margin-left 17%
 
     &__wrap__block
         margin-top w(140)
@@ -613,7 +613,8 @@
         +below(768px)
             position absolute
             display flex
-            width 96%
+            top 50%
+            width 100%
             justify-content space-between
 
     &__wrap__footer
