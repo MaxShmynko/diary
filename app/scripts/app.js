@@ -52,13 +52,11 @@ $(() => {
   }
 
   function destroySlider() {
-    // Если слайдер уже инициализирован, уничтожьте его
     if ($('.content__wrap__slider-content').hasClass('slick-initialized')) {
       $('.content__wrap__slider-content').slick('unslick');
     }
   }
 
-  // Функция, которая будет вызвана при изменении размера окна
   function handleSliderBasedOnResolution() {
     if (window.innerWidth <= 768) {
       initSlider();
@@ -67,10 +65,9 @@ $(() => {
     }
   }
 
-  // Вызов функции при загрузке страницы
+
   handleSliderBasedOnResolution();
 
-  // Добавление обработчика события на изменение размера окна
   $(window).on('resize', function () {
     handleSliderBasedOnResolution();
   });

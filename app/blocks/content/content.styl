@@ -148,13 +148,46 @@
             display none
 
     &__wrap__content-item-image
+        position relative
         width w(530)
         height w(320)
         flex-shrink 0
         img
-            width 100%
+            position absolute
         +below(768px)
-            width wm(300)
+            width wm(385)
+            height wm(200)
+            margin-top wm(10)
+
+    &__wrap__content-item-image-frame
+        width 90%
+        left w(40)
+        +below(768px)
+            left wm(20)
+
+    &__wrap__content-item-image-girl
+        position absolute
+        width 73%
+        transform rotate(-5.10deg)
+        top w(42)
+        left w(79)
+        +below(768px)
+            width 71%
+            top wm(35)
+            left wm(52)
+
+    &__wrap__content-item-image-duct-tape
+        width 27%
+        left w(-5)
+        +below(768px)
+            width 30%
+            left wm(-5)
+
+    &__wrap__content-item-arrow
+        margin-top w(130)
+        img
+            width w(40)
+
 
     &__wrap__info
         padding w(150) w(105) w(115)
@@ -248,19 +281,75 @@
         bottom w(-400)
         width w(550)
         height w(550)
+        padding 0 0 0 w(35)
         img
-            width 100%
+            position absolute
         +below(768px)
-            display none
-    
-    &__wrap__history-paper-mobile
-        display none
-        img
+            position relative
+            right 0
+            bottom 0
             width 100%
-        +below(768px)
-            display block
-            width 100%
+            height wm(450)
             margin-top wm(100)
+
+
+    &__wrap__history-paper-name
+        background url(/images/history-paper-text-bg.png) 0 0/100% 100% no-repeat
+        width w(284)
+        height w(284)
+        padding w(50) w(41)
+        +below(768px)
+            width wm(266)
+            height wm(266)
+            padding wm(43) wm(41)
+
+    &__wrap__history-paper-name-text
+        font-family $ff-Gogol
+        color $c-white
+        font-size w(30)
+        transform rotate(4.46deg)
+        +below(768px)
+            font-size wm(32)
+
+    &__wrap__history-paper-img
+        width w(401)
+        height w(414)
+        top w(120)
+        position absolute
+        right 0
+        +below(768px)
+            width wm(355)
+            height wm(355)
+            left wm(5)
+            top wm(100)
+
+
+    &__history-paper-frame
+        width 100%
+
+    &__history-paper-duct-tape
+        width 30%
+        +below(768px)
+            width 35%
+            top wm(5)
+            left wm(12)
+        
+    &__history-paper-girl
+        width 78%
+        top w(45)
+        left w(44)
+        +below(768px)
+            top wm(45)
+            left wm(44)
+    
+    // &__wrap__history-paper-mobile
+    //     display none
+    //     img
+    //         width 100%
+    //     +below(768px)
+    //         display block
+    //         width 100%
+    //         margin-top wm(100)
 
     &__wrap__history-prod
         position absolute

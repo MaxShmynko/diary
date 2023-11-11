@@ -17,7 +17,10 @@ mixin content()
                 +e.wrap__content-item-arrow
                     img(src='/images/arrow-slider-prev.svg')
                 +e.wrap__content-item-image
-                    img(src='/images/picture-item-1.png')
+                    img( class='content__wrap__content-item-image-frame' src='/images/picture-item-frame.png')
+                    img( class='content__wrap__content-item-image-girl' src='./images/history-paper-frame-girl.png')
+                    img(class='content__wrap__content-item-image-duct-tape' src='./images/duct-tape.svg')
+                    //- img(src='/images/picture-item-1.png')
                 +e.wrap__content-item-arrow
                     img(src='/images/arrow-slider-next.svg')
             +e.wrap__content-col.fadeInRight.wow(data-wow-duration="1.5s")
@@ -122,10 +125,14 @@ mixin content()
                 +e.wrap__history-message.fadeInRight.wow(data-wow-duration="1.5s")
                     +e.wrap__history-message-title Расскажите о себе, кто вы, чем занимаетесь. Есть ли увлечения, хобби.
                     +e.wrap__history-message-text <span>Анастасия:</span> Самый необычный факт обо мне заключается в том, что я магистр юриспруденции, и много лет работала юристом. Но в какой-то момент моя любовь к косметике взяла верх: я оставила карьеру юриста, отучилась на визажиста, а в дальнейшем окончательно связала свою профессиональную жизнь с бьюти-сферой.<br><br>Самый необычный факт обо мне заключается в том, что я магистр юриспруденции, и много лет работала юристом. Но в какой-то момент моя любовь к косметике взяла верх: я оставила карьеру юриста, отучилась на визажиста, а в дальнейшем окончательно связала свою профессиональную жизнь с бьюти-сферой.
-                +e.wrap__history-paper 
-                    img(src='./images/history-paper-1.svg')
-                +e.wrap__history-paper-mobile
-                    img(src='./images/history-paper-1-mobile.svg')
+                +e.wrap__history-paper.fadeInRight.wow(data-wow-duration="1.5s")
+                    +e.wrap__history-paper-name
+                        +e.wrap__history-paper-name-text Анастасия Скоморохова
+                        
+                    +e.wrap__history-paper-img
+                        img(class='content__history-paper-frame' src='./images/history-paper-frame.png')
+                        img(class='content__history-paper-girl' src='./images/history-paper-frame-girl.png')
+                        img(class='content__history-paper-duct-tape' src='./images/duct-tape.svg')
             +e.wrap__quote.fadeInLeft.wow(data-wow-duration="1.5s")
                 +e.wrap__answer-text Глядя на красивую женщину,  
                     img( class= 'content__underline-info' src='./images/underline.svg')
