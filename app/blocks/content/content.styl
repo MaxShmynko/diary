@@ -81,7 +81,6 @@
         margin w(45)
         display flex
         flex-direction row
-        justify-content space-between
         align-items center
         +below(768px)
             flex-direction column-reverse
@@ -132,10 +131,12 @@
         display flex
         flex-direction column
         justify-content flex-start
+        margin-left w(120)
         +below(768px)
             margin-top wm(60)
             align-items center
             justify-content center
+            margin-left 0
 
     &__wrap__content-item
         display flex
@@ -341,15 +342,6 @@
         +below(768px)
             top wm(45)
             left wm(44)
-    
-    // &__wrap__history-paper-mobile
-    //     display none
-    //     img
-    //         width 100%
-    //     +below(768px)
-    //         display block
-    //         width 100%
-    //         margin-top wm(100)
 
     &__wrap__history-prod
         position absolute
