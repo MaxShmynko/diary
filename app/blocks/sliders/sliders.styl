@@ -19,7 +19,7 @@
             display none
 
     &__list__card-title
-        margin-top w(40)
+        margin-top w(10)
         color $c-blue
         font-family $ff-Gogol
         font-size w(40)
@@ -98,8 +98,8 @@
         position absolute
         z-index 1
         top 50%
-        left 29%
-        max-width w(550)
+        left 31%
+        max-width w(500)
         width 100%
         display flex
         flex-direction row
@@ -132,10 +132,17 @@
             height wm(60)
 
     &__list__card-img
+        background-image url(/images/slider-paper-bg.png)
+        background-size cover
         margin auto
-        width w(250)
-        height w(215)
+        width w(300)
+        height w(300)
+        transform rotate(-5deg)
         img
+            max-width w(250)
+            position absolute
+            top w(25)
+            left w(25)
             width 100%
         
     &__list__card
@@ -207,6 +214,11 @@
     margin-top 0
 }
 
+.sliders__wrap__list .slick-slide.slick-current .sliders__list__card-img img {
+    top w(35)
+    left w(35)    
+}
+
 .sliders__wrap__list .slick-slide.slick-current .sliders__list__card-link {
     display: normal;
 }
@@ -221,25 +233,18 @@
     background url(/images/slide-active-bg.png)
     background-size cover
     border-radius w(40)
-    // transition 2s
 }
 
 .sliders__wrap__list .slick-slide.slick-current .sliders__list__card{
     margin-top 0
 }
-// @media (max-width:768px) {
-//     .sliders__wrap__list .slick-slide.slick-cloned .sliders__list__card{
-//         display: none !important;
-//     }
-// }
-
 
 .sliders__wrap__list .slick-slide.slick-current .sliders__list__card-img{
-    width w(350)
-    height w(315)
+    width w(320)
+    height w(310)
     position absolute
-    top w(-10)
-    padding-left w(30)
+    top w(-20)
+    left w(30)
 }
 @media (max-width:768px) {
     .sliders__wrap__list .slick-slide.slick-current .sliders__list__card-title {
@@ -253,11 +258,11 @@
     }
 
     .sliders__wrap__list .slick-slide.slick-current .sliders__list__card-img{
-        width wm(190)
-        height wm(170)
+        width wm(180)
+        height wm(180)
         position absolute
         top wm(-10)
-        left wm(20)
+        left wm(40)
     }
 
     .sliders__wrap__list .slick-slide.slick-current .sliders__list__card-subtitle {
@@ -271,10 +276,17 @@
     .sliders__wrap__list .slick-slide.slick-current {
         transition 0.2s
     }
+
+    .sliders__wrap__list .slick-slide.slick-current .sliders__list__card-img img {
+        top wm(20)
+        left wm(20) 
+        max-width wm(140)   
+    }
 }
 
 .sliders__wrap__list .slick-slide.slick-current .sliders__list__card-vector {
     display block
+    left wm(70)
 }
 
 .disabled{
