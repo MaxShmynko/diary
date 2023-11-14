@@ -779,3 +779,40 @@
         flex-direction row
         justify-content flex-end
 
+    &__wrap__block-impression
+        position relative
+        margin-top w(74)
+        text-align center
+        padding 0 w(200)
+        z-index 2
+        +below(768px)
+            margin-top wm(64)
+            padding 0 wm(20)
+
+    &__wrap__impression-text
+        color $c-blue
+        font-family $ff-Gogol
+        font-size w(40)
+        line-height w(50)
+        +below(768px)
+            font-size wm(32)
+            line-height wm(34)
+
+
+    &__wrap__impression-img
+        position absolute
+        top w(40)
+        left w(150)
+        z-index -1
+        height w(100)
+        +below(768px)
+            display none
+        
+
+
+
+
+
+
+
+

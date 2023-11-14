@@ -26,6 +26,15 @@ mixin promo()
             img(src='/images/picture-fruct.svg')
         +e.bg-slider
             img(src='/images/promo-bg-sliders.png')
+        +e.wrap__product
+            +e.wrap__product-img.fadeInLeft.wow(data-wow-duration="1.5s")
+                img(src='/images/product-img.png')
+            +e.wrap__product-description.fadeInRight.wow(data-wow-duration="1.5s")
+                +e.wrap__product-title О проекте
+                +e.wrap__product-text
+                    +e('p').wrap__product-text-paragraph Они мечтали о новом ярком опыте и стали лицами рекламной кампании. Мечтали улучшить состояние кожи - и получили консультацию звёздного эксперта по уходу за лицом. Мечтали поверить в себя и стать ярче - и профессиональная фотосессия помогла им в этом.
+                    +e('p').wrap__product-text-paragraph Участницы проекта Магнит Косметик, тестировавшие сыворотку Revitalift с Витамином С, рассказали о том, как им удалось стать лицами кампании и попробовать себя в новой роли, просто оставив отзыв о продукте.
+
         +sliders('counter')
         +e.wrap__footer.fadeIn.wow(data-wow-duration="2s")
             +e.wrap__footer-sharing

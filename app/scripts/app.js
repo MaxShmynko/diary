@@ -12,7 +12,7 @@ $(() => {
 	wow.init();
 
   $('.sliders__wrap__list').slick({
-    infinite: true, 
+    infinite: false, 
     slidesToShow: 3, 
     slidesToScroll: 1,
     vertical: false,

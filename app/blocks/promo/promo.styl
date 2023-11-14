@@ -403,6 +403,47 @@
             height wm(20)
             margin-left wm(10)
 
+    &__wrap__product
+        margin-top w(120)
+        display flex
+        position relative
+        align-items center
+        gap w(40)
+        z-index 2
+        +below(768px)
+            flex-direction column
+
+    &__wrap__product-img
+        width w(293)
+        img
+            width 100%
+        +below(768px)
+            width wm(293)
+
+    &__wrap__product-title
+        font-family $ff-Gogol
+        color $c-blue
+        font-size w(55)
+        +below(768px)
+            font-size wm(45)
+
+
+    &__wrap__product-text 
+        color $c-black
+        font-family $ff-Montserrat
+        font-size w(17)
+        font-weight 400
+        line-height w(22)
+        width w(613)
+        padding-top w(20)
+        +below(768px)
+            width auto
+            font-size wm(17)
+            line-height wm(22)
+            padding-top wm(25)
+
+
+
 .footer-link-od-over{
     display none
 }
